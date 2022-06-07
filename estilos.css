@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    width: 390px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 30px;
+    box-shadow: 0px 0px 40px #C8C8C8;
+}
+
+.card .imagen-mostrada {
+    width: 257px;
+    transform: rotate(-15deg);
+}
+
+.card .titulo {
+    margin-top: 40px;
+    width: 100%;
+    font-size: 30px;
+}
+
+.card .colores {
+    margin-top: 40px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card .colores span {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #274588;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.card .colores span:nth-child(2) {
+    background-color: #DE8B1A;
+}
+
+.card .colores span:nth-child(3) {
+    background-color: #E6EAEB;
+}
+
+.card .tallas-contenedor {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.card .tallas {
+    margin-top: 20px;
+    display: flex;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+.card .tallas .talla {
+    background-color: #EBEBEB;
+    padding: 10px;
+    border-radius: 1000px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.card .tallas .talla:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card .tallas .talla.active {
+    background-color: #323232;
+    color: #F2F2F2;
+    transform: translateY(-20px);
+}
+
+.imagenes {
+    display: flex;
+}
+
+.imagenes img {
+    width: 187px;
+    transform: rotate(-25deg);
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
